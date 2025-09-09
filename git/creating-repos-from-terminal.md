@@ -41,8 +41,11 @@ echo "# Your Project Name" > README.md
 git add .
 git commit -m "Initial commit"
 
-# Create GitHub repo and push
-gh repo create your-repo-name --public --push
+# Create GitHub repo and push the changes
+# Public
+gh repo create analytics-engineering --public --source=. --remote=origin --push
+# Private
+gh repo create analytics-engineering --private --source=. --remote=origin --push
 ```
 
 ## Method 2: Manual approach
